@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ociWrapper">
+      <UniqueIdentifier>{d313ed77-8ae0-4e78-b485-508be9217a5a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oracle-interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oclib\src\oci_api.h">
+      <Filter>ociWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="oclib\src\oci_defs.h">
+      <Filter>ociWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="oclib\src\oci_import.h">
+      <Filter>ociWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="oclib\src\oci_loader.h">
+      <Filter>ociWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="oclib\src\oci_types.h">
+      <Filter>ociWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="oclib\src\ocilib_checks.h">
+      <Filter>ociWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="oclib\src\ocilib_defs.h">
+      <Filter>ociWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="oclib\src\ocilib_internal.h">
+      <Filter>ociWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="oclib\src\ocilib_types.h">
+      <Filter>ociWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="memory-debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBInt_Oracle_delayLoaded_DLL_Hooks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBInt_Oracle_delayLoaded_DLL_FuncImps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="oclib\src\number.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\object.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\pool.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\queue.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\ref.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\resultset.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\statement.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\string.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\subscription.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\thread.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\threadkey.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\timestamp.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\transaction.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\typeinfo.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\agent.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\array.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\bind.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\callback.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\collection.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\column.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\connection.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\date.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\define.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\dequeue.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\dirpath.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\element.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\enqueue.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\error.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\event.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\exception.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\file.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\format.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\handle.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\hash.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\interval.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\iterator.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\library.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\list.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\lob.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\long.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\memory.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\msg.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="oclib\src\mutex.c">
+      <Filter>ociWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="memory-debug.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBInt_Oracle_delayLoaded_DLL_FuncImps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBInt_Oracle_delayLoaded_DLL_Hooks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oracle-interface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
