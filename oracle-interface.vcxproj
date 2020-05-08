@@ -133,6 +133,7 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\app\Murad-Dev\product\18.0.0\dbhomeXE\oci\include;C:\oraclexe\app\oracle\product\11.2.0\server\oci\include;$(ProjectDir)oclib\include;$(IncludePath)</IncludePath>
     <OutDir>$(ProjectDir)$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -147,6 +148,7 @@
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>C:\app\Murad-Dev\product\18.0.0\dbhomeXE\oci\include;C:\oraclexe\app\oracle\product\11.2.0\server\oci\include;$(ProjectDir)oclib\include;$(IncludePath)</IncludePath>
     <OutDir>$(ProjectDir)$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForMe|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -171,13 +173,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>DBIntOracle;_DEBUG;_WINDOWS;_USRDLL;ORACLEINTERFACE_EXPORTS;HTSQL_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAs>CompileAsC</CompileAs>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -248,13 +249,12 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>DBIntOracle;NDEBUG;_WINDOWS;_USRDLL;ORACLEINTERFACE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -347,7 +347,7 @@ c:\Windows\System32\inetsrv\appcmd.exe start apppool /apppool.name:htsql</Comman
     <ClInclude Include="oclib\src\oci_loader.h" />
     <ClInclude Include="oclib\src\oci_types.h" />
     <ClInclude Include="oracle-interface.h" />
-    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
@@ -424,7 +424,7 @@ c:\Windows\System32\inetsrv\appcmd.exe start apppool /apppool.name:htsql</Comman
     <ClCompile Include="oclib\src\transaction.c" />
     <ClCompile Include="oclib\src\typeinfo.c" />
     <ClCompile Include="oracle-interface.c" />
-    <ClCompile Include="stdafx.c" />
+    <ClCompile Include="pch.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

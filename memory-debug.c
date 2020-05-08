@@ -1,4 +1,6 @@
-﻿#include "memory-debug.h"
+﻿#include "pch.h"
+
+#include "memory-debug.h"
 
 
 #ifdef HTSQL_MEMORY_LEAK_DEBUG

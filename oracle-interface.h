@@ -43,7 +43,14 @@ ORACLEINTERFACE_API void				oraclePrepare(DBInt_Connection * mkConnection, DBInt
 ORACLEINTERFACE_API unsigned int		oracleGetColumnCount(DBInt_Connection *mkConnection, DBInt_Statement *stm);
 ORACLEINTERFACE_API const char			*oracleGetColumnValueByColumnName(DBInt_Connection * mkConnection, DBInt_Statement *stm, const char *columnName);
 ORACLEINTERFACE_API void				*oracleGetLob(DBInt_Connection * mkConnection, DBInt_Statement *stm, const char *columnName, DWORD *sizeOfValue);
-ORACLEINTERFACE_API HTSQL_COLUMN_TYPE	oracleGetColumnType(DBInt_Connection * mkConnection, DBInt_Statement *stm, const char *columnName);
+ORACLEINTERFACE_API 
+
+SODIUM_DATABASE_COLUMN_TYPE 
+oracleGetColumnType(
+	DBInt_Connection * mkConnection, 
+	DBInt_Statement * stm, 
+	const char *columnName);
+
 ORACLEINTERFACE_API unsigned int		oracleGetColumnSize(DBInt_Connection * mkConnection, DBInt_Statement *stm, const char *columnName);
 ORACLEINTERFACE_API const char			*oracleGetColumnNameByIndex(DBInt_Connection *mkDBConnection, DBInt_Statement *stm, unsigned int index);
 /* Caller must release return value */
