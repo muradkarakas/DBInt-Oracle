@@ -131,7 +131,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\app\Murad-Dev\product\18.0.0\dbhomeXE\oci\include;C:\oraclexe\app\oracle\product\11.2.0\server\oci\include;$(ProjectDir)oclib\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\app\Sodium\product\18.0.0\dbhomeXE\oci\include;$(ProjectDir)oclib\include;$(IncludePath)</IncludePath>
     <OutDir>$(ProjectDir)$(Platform)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -146,7 +146,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\app\Murad-Dev\product\18.0.0\dbhomeXE\oci\include;C:\oraclexe\app\oracle\product\11.2.0\server\oci\include;$(ProjectDir)oclib\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\app\Sodium\product\18.0.0\dbhomeXE\oci\include;$(ProjectDir)oclib\include;$(IncludePath)</IncludePath>
     <OutDir>$(ProjectDir)$(Platform)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -183,12 +183,12 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\app\Murad-Dev\product\18.0.0\dbhomeXE\oci\lib\msvc;C:\oraclexe\app\oracle\product\11.2.0\server\oci\lib\MSVC;C:\Program Files\PostgreSQL\12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\app\Sodium\product\18.0.0\dbhomeXE\oci\lib\msvc;C:\Program Files\PostgreSQL\12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>..\SodiumShared\x64\SodiumShared.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DelayLoadDLLs>oci.dll;SodiumShared.dll</DelayLoadDLLs>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)$(Platform)\DBInt-Oracle.dll C:\projects\Sodium\Setup</Command>
+      <Command>copy $(ProjectDir)$(Platform)\DBInt-Oracle.dll C:\Sodium\Sodium-Setup</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>
@@ -261,12 +261,12 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\app\Murad-Dev\product\18.0.0\dbhomeXE\oci\lib\msvc;C:\oraclexe\app\oracle\product\11.2.0\server\oci\lib\MSVC;C:\Program Files\PostgreSQL\12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\app\Sodium\product\18.0.0\dbhomeXE\oci\lib\msvc;C:\Program Files\PostgreSQL\12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>..\SodiumShared\x64\SodiumShared.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <DelayLoadDLLs>oci.dll;SodiumShared.dll</DelayLoadDLLs>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)$(Platform)\DBInt-Oracle.dll C:\projects\Sodium\Setup</Command>
+      <Command>copy $(ProjectDir)$(Platform)\DBInt-Oracle.dll C:\Sodium\Sodium-Setup</Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>
