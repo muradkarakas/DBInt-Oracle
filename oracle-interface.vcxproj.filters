@@ -19,6 +19,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="Licence.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">

@@ -330,6 +330,7 @@ c:\Windows\System32\inetsrv\appcmd.exe start apppool /apppool.name:htsql</Comman
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="Licence.txt" />
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
